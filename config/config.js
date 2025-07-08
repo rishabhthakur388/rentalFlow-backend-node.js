@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const uri = "mongodb://0.0.0.0:27017/RentalApplications"
+const uri = process.env.URI
 mongoose.connect(uri, {
     useNewUrlParser: true , useUnifiedTopology: true
 })

@@ -92,20 +92,3 @@ app.listen(port, () => {
 // const arr = ['A', 'N', 'U'];
 // arr[10] = 10;
 // console.log(arr.length);
-
-
-
-let arr1 = [10, 12, 3.1];
-let arr2 = [10, 12, 3.1];
-
-function arraysEqual(arr1, arr2) {
-    if (arr1.length !== arr2.length)
-        return false;
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] !== arr2[i])
-        return false;
-    }
-    return true;
-}
-
-console.log(arraysEqual(arr1, arr2)); // Outputs: true
