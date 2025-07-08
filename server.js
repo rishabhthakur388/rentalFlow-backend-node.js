@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 3005;
-
+dbconnect();
 // Middleware to log every request
 app.use((req, res, next) => {
   console.log(`Ping received at ${new Date().toLocaleString()} from ${req.ip}`);
